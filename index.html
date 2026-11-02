@@ -1,10 +1,1370 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Azriel Adha Agnansyah | Portfolio</title>
+  <meta name="description"
+    content="Personal Portfolio of Muhammad Azriel Adha Agnansyah - D4 Informatics Engineering Student at Politeknik Negeri Jember PSDKU Nganjuk. Web & Mobile Development.">
+  <meta name="theme-color" content="#06080d">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%23a855f7'/><stop offset='100%25' stop-color='%2306b6d4'/></linearGradient></defs><rect width='24' height='24' rx='6' fill='%23090d15'/><path d='M12 4L5 19h3.5l1.6-3.8h4.8l1.6 3.8H20L13 4h-1z' fill='url(%23g)'/><line x1='9' y1='13' x2='16' y2='13' stroke='%2338bdf8' stroke-width='1.5'/></svg>">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
+
+  <!-- Background Ambient Glow & Spheres -->
+  <div class="ambient-glow-left" aria-hidden="true"></div>
+  <div class="ambient-glow-right" aria-hidden="true"></div>
+  <div class="ambient-sphere sphere-left" aria-hidden="true"></div>
+  <div class="ambient-sphere sphere-right" aria-hidden="true"></div>
+
+  <!-- Sticky Navbar -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <!-- Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#certificates" class="nav-link">Certificates</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <a href="cv-azriel/CV_Muhammad_Azriel_Adha_Agnansyah.pdf" target="_blank" rel="noopener noreferrer"
+          class="btn-download-cv">
+          <span>Download CV</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+        </a>
+
+        <!-- Mobile Navigation Toggle -->
+        <button class="nav-toggle" aria-label="Buka menu navigasi" aria-expanded="false">
+          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="container hero-grid">
+
+        <!-- Left Content -->
+        <div class="hero-content">
+
+          <!-- Status Pill Badge -->
+          <div class="status-pill fade-up-init">
+            <span class="status-dot"></span>
+            <span class="status-text">Hello, I'm</span>
+          </div>
+
+          <!-- Hero Heading -->
+          <h1 class="hero-title fade-up-init delay-1">
+            <span class="title-row-1">Muhammad Azriel</span>
+            <span class="title-row-2">Adha <span class="gradient-text">Agnansyah</span></span>
+          </h1>
+
+          <!-- Hero Subtitle -->
+          <p class="hero-subtitle fade-up-init delay-2">
+            <span class="highlight-affiliation">D4 Informatics Engineering Student</span> at Politeknik Negeri Jember
+            PSDKU Nganjuk | Passionate about Web & Mobile Development
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-cta-group fade-up-init delay-3">
+            <a href="#projects" class="btn-primary">
+              <span>Explore My Work</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#about" class="btn-secondary">
+              <span>About Me</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="hero-socials fade-up-init delay-4" aria-label="Tautan Media Sosial">
+            <a href="https://github.com/muhammadazriel313-wq" target="_blank" rel="noopener noreferrer"
+              class="social-pill-btn" aria-label="GitHub Profile">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/muhammad-azriel-2a2113445/" target="_blank" rel="noopener noreferrer"
+              class="social-pill-btn" aria-label="LinkedIn Profile">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+            </a>
+            <a href="https://wa.me/6289654957080" target="_blank" rel="noopener noreferrer" class="social-pill-btn"
+              aria-label="WhatsApp (089654957080)">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+              </svg>
+            </a>
+            <a href="mailto:muhammadazriel313@gmail.com" class="social-pill-btn" aria-label="Kirim Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right Visual Showcase -->
+        <div class="hero-showcase">
+          <div class="showcase-inner">
+            <!-- Atmospheric backglow -->
+            <div class="portrait-backglow" aria-hidden="true"></div>
+
+            <!-- Floating Cosmic Planet/Sphere (Top-Right) -->
+            <div class="cosmic-planet planet-top-right" aria-hidden="true"></div>
+
+            <!-- 3D Glowing Orbital Ring -->
+            <div class="orbital-ring-wrap" aria-hidden="true">
+              <svg class="orbital-ring-svg" viewBox="0 0 640 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="ringGradient" x1="0%" y1="50%" x2="100%" y2="50%">
+                    <stop offset="0%" stop-color="#00f2fe" stop-opacity="1" />
+                    <stop offset="35%" stop-color="#06b6d4" stop-opacity="0.9" />
+                    <stop offset="70%" stop-color="#8b5cf6" stop-opacity="0.9" />
+                    <stop offset="100%" stop-color="#c084fc" stop-opacity="0.7" />
+                  </linearGradient>
+                  <filter id="glowEffect" x="-30%" y="-30%" width="160%" height="160%">
+                    <feGaussianBlur stdDeviation="6" result="blur" />
+                    <feMerge>
+                      <feMergeNode in="blur" />
+                      <feMergeNode in="blur" />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                  </filter>
+                </defs>
+                <!-- Outer subtle glow ellipse -->
+                <ellipse cx="320" cy="140" rx="300" ry="110" stroke="url(#ringGradient)" stroke-width="4"
+                  filter="url(#glowEffect)" opacity="0.85" />
+                <!-- Core sharp crisp ring -->
+                <ellipse cx="320" cy="140" rx="300" ry="110" stroke="url(#ringGradient)" stroke-width="2.5" />
+                <!-- Orbiting spark / glint -->
+                <circle cx="90" cy="190" r="3.5" fill="#ffffff" filter="url(#glowEffect)" />
+                <circle cx="530" cy="85" r="2.5" fill="#c084fc" filter="url(#glowEffect)" />
+              </svg>
+            </div>
+
+            <!-- Seamless Floating Portrait (No Card / No Box, Pure HD) -->
+            <div class="portrait-cutout-container">
+              <img src="assets/images/profile-azriel-hd.png" alt="Muhammad Azriel Adha Agnansyah"
+                class="portrait-cutout-img" width="794" height="630" loading="eager" fetchpriority="high">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         ABOUT SECTION
+         ======================================================================= -->
+    <section class="section about-section" id="about">
+      <div class="container">
+
+        <div class="about-grid">
+
+          <!-- Left: Editorial Content -->
+          <div class="about-editorial fade-up-init">
+            <div class="section-tag">
+              <span class="tag-glow-dot"></span>
+              <span>About Me</span>
+            </div>
+
+            <h2 class="section-title">
+              Let's Get to Know <span class="gradient-text">Me Better</span>
+            </h2>
+
+            <p class="about-lead">
+              Saya adalah mahasiswa <strong>D4 Teknik Informatika</strong> di <strong>Politeknik Negeri Jember (PSDKU
+                Nganjuk)</strong> yang memiliki ketertarikan mendalam pada rekayasa perangkat lunak, khususnya di bidang
+              <em>web development</em> dan <em>mobile development</em>.
+            </p>
+
+            <p class="about-text">
+              Selama menempuh perkuliahan, saya aktif mengembangkan kompetensi teknis melalui pengerjaan proyek-proyek
+              aplikasi secara tim. Saya terbiasa berkolaborasi dalam keseluruhan tahapan pengembangan—mulai dari
+              perancangan antarmuka (UI/UX) di Figma, implementasi frontend yang responsif, hingga pengembangan backend
+              dan perancangan basis data relasional.
+            </p>
+
+            <p class="about-text">
+              Sebagai mahasiswa yang senantiasa bertumbuh, saya berkomitmen untuk terus mengasah kemampuan teknis,
+              memperdalam pemahaman arsitektur perangkat lunak, dan siap berkontribusi secara nyata dalam pengembangan
+              solusi digital yang solutif.
+            </p>
+
+            <!-- Key Interest Badges -->
+            <div class="about-highlights">
+              <div class="highlight-chip">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+                <span>Web Development</span>
+              </div>
+              <div class="highlight-chip">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                  <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                </svg>
+                <span>Mobile Apps</span>
+              </div>
+              <div class="highlight-chip">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <path d="M12 20h9"></path>
+                  <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                </svg>
+                <span>UI/UX Design</span>
+              </div>
+              <div class="highlight-chip">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <span>Team Collaboration</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Visual Bento Cards (Stats & Education Snapshot) -->
+          <div class="about-side fade-up-init delay-1">
+
+            <!-- Academic & Achievements Card -->
+            <div class="bento-card stats-bento">
+              <div class="bento-glow" aria-hidden="true"></div>
+              <div class="bento-header">
+                <span class="bento-tag">Academic & Track Record</span>
+              </div>
+
+              <div class="metrics-grid">
+                <div class="metric-item">
+                  <div class="metric-icon metric-purple">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"
+                      aria-hidden="true">
+                      <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                      <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                    </svg>
+                  </div>
+                  <div class="metric-value gradient-text">3.95</div>
+                  <div class="metric-label">GPA (Semester 2)</div>
+                </div>
+
+                <div class="metric-item">
+                  <div class="metric-icon metric-blue">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"
+                      aria-hidden="true">
+                      <polyline points="16 18 22 12 16 6"></polyline>
+                      <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                  </div>
+                  <div class="metric-value">3+</div>
+                  <div class="metric-label">Team Projects</div>
+                </div>
+
+                <div class="metric-item">
+                  <div class="metric-icon metric-cyan">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"
+                      aria-hidden="true">
+                      <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                      <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                      <path d="M4 22h16"></path>
+                      <path d="M10 14.66V17c0 .55-.45 1-1 1H7c-.55 0-1-.45-1-1v-2.34"></path>
+                      <path d="M14 14.66V17c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-2.34"></path>
+                      <path d="M18 2H6v7a6 6 0 0 0 12 0V2z"></path>
+                    </svg>
+                  </div>
+                  <div class="metric-value">2</div>
+                  <div class="metric-label">English Certificates</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Education Snapshot Card -->
+            <div class="bento-card edu-preview-bento">
+              <div class="bento-glow" aria-hidden="true"></div>
+              <div class="edu-preview-header">
+                <span class="edu-badge">Current Education</span>
+                <span class="edu-year">2025 – Present</span>
+              </div>
+              <h3 class="edu-preview-title">D4 Teknik Informatika</h3>
+              <p class="edu-preview-institution">Politeknik Negeri Jember (PSDKU Nganjuk)</p>
+              <div class="edu-preview-tags">
+                <span class="tag-pill">IPK Sem 1: 3.50</span>
+                <span class="tag-pill tag-highlight">IPK Sem 2: 3.95</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SKILLS SECTION
+         ======================================================================= -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+
+        <div class="section-heading-wrap fade-up-init">
+          <div class="section-tag">
+            <span class="tag-glow-dot"></span>
+            <span>Skills & Tech Stack</span>
+          </div>
+          <h2 class="section-title">
+            Technologies & <span class="gradient-text">Core Competencies</span>
+          </h2>
+          <p class="section-subtitle">
+            Keahlian teknis dan perangkat pengembangan yang saya pelajari serta terapkan dalam proyek nyata sesuai
+            kurikulum dan praktik perkuliahan.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+
+          <!-- Category 1: Web Development -->
+          <div class="skill-category-card fade-up-init">
+            <div class="card-ambient-glow" aria-hidden="true"></div>
+            <div class="category-header">
+              <div class="category-icon-box cat-purple">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">Web Development</h3>
+                <span class="category-desc">Modern responsive web engineering</span>
+              </div>
+            </div>
+
+            <div class="skills-item-list">
+              <!-- HTML -->
+              <div class="skill-pill-item">
+                <div class="skill-icon-wrap" style="color: #e34f26;">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                    <path d="M12 2L3 5v14l9 3 9-3V5l-9-3zm6.5 15.6L12 19.8l-6.5-2.2L4.3 6.6h15.4l-1.2 11z" />
+                  </svg>
+                </div>
+                <div class="skill-text-info">
+                  <span class="skill-name">HTML</span>
+                  <span class="skill-level-text">Semantic Markup</span>
+                </div>
+              </div>
+
+              <!-- CSS -->
+              <div class="skill-pill-item">
+                <div class="skill-icon-wrap" style="color: #1572b6;">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                    <path d="M12 2L3 5v14l9 3 9-3V5l-9-3zm6.5 15.6L12 19.8l-6.5-2.2L4.3 6.6h15.4l-1.2 11z" />
+                  </svg>
+                </div>
+                <div class="skill-text-info">
+                  <span class="skill-name">CSS</span>
+                  <span class="skill-level-text">Responsive & Flex/Grid</span>
+                </div>
+              </div>
+
+              <!-- PHP -->
+              <div class="skill-pill-item">
+                <div class="skill-icon-wrap" style="color: #777bb4;">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                    <ellipse cx="12" cy="12" rx="10" ry="6"></ellipse>
+                    <path d="M8 10h4a2 2 0 1 1 0 4H8v-4z"></path>
+                  </svg>
+                </div>
+                <div class="skill-text-info">
+                  <span class="skill-name">PHP</span>
+                  <span class="skill-level-text">Server-Side Scripting</span>
+                </div>
+              </div>
+
+              <!-- Laravel -->
+              <div class="skill-pill-item">
+                <div class="skill-icon-wrap" style="color: #ff2d20;">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                    <path d="M2 17l10 5 10-5"></path>
+                    <path d="M2 12l10 5 10-5"></path>
+                  </svg>
+                </div>
+                <div class="skill-text-info">
+                  <span class="skill-name">Laravel</span>
+                  <span class="skill-level-text">MVC Framework & Routing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Mobile & Database -->
+          <div class="skill-category-card fade-up-init delay-1">
+            <div class="card-ambient-glow" aria-hidden="true"></div>
+            <div class="category-header">
+              <div class="category-icon-box cat-blue">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                  <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">Mobile & Database</h3>
+                <span class="category-desc">Cross-platform app & data storage</span>
+              </div>
+            </div>
+
+            <div class="skills-item-list">
+              <!-- Flutter -->
+              <div class="skill-pill-item">
+                <div class="skill-icon-wrap" style="color: #02569b;">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                    <path d="M14.314 0L2.3 12 6 15.7 21.684 0zm0 13.567L7.986 20.354 11.686 24l9.998-10.433z" />
+                  </svg>
+                </div>
+                <div class="skill-text-info">
+                  <span class="skill-name">Flutter</span>
+                  <span class="skill-level-text">Cross-Platform UI</span>
+                </div>
+              </div>
+
+              <!-- MySQL -->
+              <div class="skill-pill-item">
+                <div class="skill-icon-wrap" style="color: #00758f;">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                  </svg>
+                </div>
+                <div class="skill-text-info">
+                  <span class="skill-name">MySQL</span>
+                  <span class="skill-level-text">Relational Database & SQL</span>
+                </div>
+              </div>
+
+              <!-- Frontend Engineering -->
+              <div class="skill-pill-item">
+                <div class="skill-icon-wrap" style="color: #38bdf8;">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="3" y1="9" x2="21" y2="9"></line>
+                    <line x1="9" y1="21" x2="9" y2="9"></line>
+                  </svg>
+                </div>
+                <div class="skill-text-info">
+                  <span class="skill-name">Frontend</span>
+                  <span class="skill-level-text">User Interface Integration</span>
+                </div>
+              </div>
+
+              <!-- Backend Engineering -->
+              <div class="skill-pill-item">
+                <div class="skill-icon-wrap" style="color: #10b981;">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                    <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                    <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                    <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                  </svg>
+                </div>
+                <div class="skill-text-info">
+                  <span class="skill-name">Backend</span>
+                  <span class="skill-level-text">Business Logic & APIs</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Design & Collaboration -->
+          <div class="skill-category-card fade-up-init delay-2">
+            <div class="card-ambient-glow" aria-hidden="true"></div>
+            <div class="category-header">
+              <div class="category-icon-box cat-cyan">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <path
+                    d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                  </path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">Design & Workflow</h3>
+                <span class="category-desc">Prototyping & team version control</span>
+              </div>
+            </div>
+
+            <div class="skills-item-list">
+              <!-- Figma -->
+              <div class="skill-pill-item">
+                <div class="skill-icon-wrap" style="color: #a259ff;">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                    <path
+                      d="M8 2h4a4 4 0 0 1 0 8H8V2zm0 8h4a4 4 0 0 1 4 4 4 4 0 0 1-4 4H8v-8zm0 8h4a4 4 0 1 1-4 4v-4zM4 6a4 4 0 0 1 4-4v8H4a4 4 0 0 1 0-8zm0 8h4v8a4 4 0 0 1-4-4 4 4 0 0 1 0-4z" />
+                  </svg>
+                </div>
+                <div class="skill-text-info">
+                  <span class="skill-name">Figma</span>
+                  <span class="skill-level-text">UI/UX Wireframing & Design</span>
+                </div>
+              </div>
+
+              <!-- Git & GitHub -->
+              <div class="skill-pill-item">
+                <div class="skill-icon-wrap" style="color: #f05032;">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                </div>
+                <div class="skill-text-info">
+                  <span class="skill-name">Git & GitHub</span>
+                  <span class="skill-level-text">Branching & Repository Sync</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         FEATURED PROJECTS SECTION
+         ======================================================================= -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+
+        <div class="section-heading-wrap fade-up-init">
+          <div class="section-tag">
+            <span class="tag-glow-dot"></span>
+            <span>Featured Projects</span>
+          </div>
+          <h2 class="section-title">
+            Crafted with Purpose & <span class="gradient-text">Collaboration</span>
+          </h2>
+          <p class="section-subtitle">
+            Kumpulan proyek rekayasa perangkat lunak yang dikerjakan secara berkelompok selama perkuliahan dengan
+            kontribusi aktif pada frontend, backend, database, dan antarmuka.
+          </p>
+        </div>
+
+        <div class="projects-container">
+
+          <!-- Featured Project 1 (Spotlight): E-PKK -->
+          <article class="project-spotlight-card fade-up-init">
+            <div class="spotlight-card-glow" aria-hidden="true"></div>
+
+            <div class="spotlight-grid">
+
+              <!-- Left: Project Visual Mockup (SVG Glassmorphic Interactive Dashboard) -->
+              <div class="project-mockup-wrap">
+                <div class="mockup-frame">
+                  <!-- Browser Bar -->
+                  <div class="mockup-top-bar">
+                    <span class="browser-dot dot-red"></span>
+                    <span class="browser-dot dot-yellow"></span>
+                    <span class="browser-dot dot-green"></span>
+                    <span class="mockup-url-pill">epkk.polije.ac.id/admin/dashboard</span>
+                  </div>
+
+                  <!-- Mockup Content Canvas -->
+                  <div class="mockup-canvas">
+                    <!-- Dashboard Header -->
+                    <div class="mockup-row space-between">
+                      <div class="mockup-stat-box">
+                        <span class="mockup-stat-num text-cyan">480+</span>
+                        <span class="mockup-stat-txt">Data Warga</span>
+                      </div>
+                      <div class="mockup-stat-box">
+                        <span class="mockup-stat-num text-purple">12</span>
+                        <span class="mockup-stat-txt">Program Kerja</span>
+                      </div>
+                      <div class="mockup-stat-box">
+                        <span class="mockup-stat-num text-green">100%</span>
+                        <span class="mockup-stat-txt">Terkoneksi API</span>
+                      </div>
+                    </div>
+
+                    <!-- Mockup Data Table Preview -->
+                    <div class="mockup-table">
+                      <div class="table-head-row">
+                        <span>Nama Program</span>
+                        <span>Kategori</span>
+                        <span>Status</span>
+                      </div>
+                      <div class="table-data-row">
+                        <span class="cell-main">Posyandu Balita RW 02</span>
+                        <span class="cell-sub">Kesehatan</span>
+                        <span class="badge-done">Terlaksana</span>
+                      </div>
+                      <div class="table-data-row">
+                        <span class="cell-main">Pelatihan UMKM Kerajinan</span>
+                        <span class="cell-sub">Ekonomi</span>
+                        <span class="badge-prog">Berjalan</span>
+                      </div>
+                      <div class="table-data-row">
+                        <span class="cell-main">Sosialisasi Ketahanan Pangan</span>
+                        <span class="cell-sub">Pokja III</span>
+                        <span class="badge-plan">Terjadwal</span>
+                      </div>
+                    </div>
+
+                    <!-- Dual Platform Companion Badge -->
+                    <div class="dual-platform-floating">
+                      <div class="mobile-phone-silhouette">
+                        <div class="phone-notch"></div>
+                        <div class="phone-screen-mini">
+                          <span class="mini-app-title">E-PKK Mobile</span>
+                          <span class="mini-app-badge">Flutter UI</span>
+                        </div>
+                      </div>
+                      <div class="platform-caption">
+                        <strong>Web & Mobile Ecosystem</strong>
+                        <span>Admin Web (Laravel) + User App (Flutter)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right: Project Description & Contribution -->
+              <div class="spotlight-info">
+                <div class="project-badges-row">
+                  <span class="status-badge status-dev">
+                    <span class="badge-pulse-dot"></span>
+                    In Development
+                  </span>
+                  <span class="type-badge">Proyek Kelompok (Team Project)</span>
+                </div>
+
+                <h3 class="project-spotlight-title">E-PKK — Web & Mobile Application</h3>
+
+                <p class="project-desc">
+                  Sistem informasi terintegrasi untuk digitalisasi pendataan dan manajemen kegiatan organisasi
+                  Pemberdayaan Kesejahteraan Keluarga (PKK). Memadukan dashboard web untuk pengelolaan data
+                  administratif bagi pengurus serta aplikasi mobile untuk kemudahan akses informasi bagi para kader dan
+                  warga.
+                </p>
+
+                <!-- Contribution Highlights -->
+                <div class="contribution-box">
+                  <span class="contrib-label">Kontribusi Saya dalam Tim:</span>
+                  <div class="contrib-tags">
+                    <span class="contrib-tag">Frontend Development</span>
+                    <span class="contrib-tag">Backend API & Routing</span>
+                    <span class="contrib-tag">UI/UX Design di Figma</span>
+                  </div>
+                </div>
+
+                <!-- Tech Stack Badges -->
+                <div class="tech-stack-row">
+                  <span class="tech-tag">Laravel</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">Flutter</span>
+                  <span class="tech-tag">Figma</span>
+                </div>
+
+                <!-- Action Links -->
+                <div class="project-actions-row">
+                  <a href="https://github.com/muhammadazriel313-wq/Website_E-PKK" target="_blank"
+                    rel="noopener noreferrer" class="btn-project-primary">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                      <path
+                        d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                    </svg>
+                    <span>Website Repo</span>
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <line x1="7" y1="17" x2="17" y2="7"></line>
+                      <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                  </a>
+
+                  <a href="https://github.com/muhammadazriel313-wq/Mobile_E-PKK" target="_blank"
+                    rel="noopener noreferrer" class="btn-project-secondary">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                      <path
+                        d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                    </svg>
+                    <span>Mobile Repo</span>
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <line x1="7" y1="17" x2="17" y2="7"></line>
+                      <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- Secondary Projects 2-Column Grid -->
+          <div class="projects-subgrid">
+
+            <!-- Project 2: Pangsit Njedok -->
+            <article class="project-card fade-up-init">
+              <div class="card-ambient-glow" aria-hidden="true"></div>
+
+              <!-- Mockup Graphic (Mobile App Food UI) -->
+              <div class="sub-mockup-frame">
+                <div class="mobile-mockup-screen">
+                  <div class="mobile-ui-bar">
+                    <span class="time-txt">12:30</span>
+                    <div class="mobile-icons-group">
+                      <span class="bar-pill"></span>
+                      <span class="bar-pill"></span>
+                    </div>
+                  </div>
+
+                  <div class="food-app-preview">
+                    <div class="food-header-row">
+                      <span class="food-brand">Pangsit Njedok</span>
+                      <span class="cart-pill-icon">🛒 2</span>
+                    </div>
+
+                    <div class="food-items-mock">
+                      <div class="food-card-mini">
+                        <div class="food-color-dot dot-orange"></div>
+                        <div class="food-desc-mini">
+                          <span class="mini-food-name">Pangsit Goreng Spesial</span>
+                          <span class="mini-price">Rp 15.000</span>
+                        </div>
+                        <span class="btn-mini-add">+</span>
+                      </div>
+
+                      <div class="food-card-mini">
+                        <div class="food-color-dot dot-red"></div>
+                        <div class="food-desc-mini">
+                          <span class="mini-food-name">Pangsit Kuah Pedas</span>
+                          <span class="mini-price">Rp 16.000</span>
+                        </div>
+                        <span class="btn-mini-add">+</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Content Info -->
+              <div class="project-card-content">
+                <div class="project-badges-row">
+                  <span class="status-badge status-complete">Completed</span>
+                  <span class="type-badge">Proyek Kelompok</span>
+                </div>
+
+                <h3 class="project-title">Pangsit Njedok — Food Ordering App</h3>
+
+                <p class="project-desc">
+                  Aplikasi mobile pemesanan kuliner pangsit modern berbasis Flutter yang mempermudah pelanggan melihat
+                  menu hidangan, memilih varian level pedas, dan melakukan checkout pesanan secara praktis.
+                </p>
+
+                <!-- Contribution -->
+                <div class="contribution-box compact">
+                  <span class="contrib-label">Kontribusi:</span>
+                  <span class="contrib-text">Frontend (Flutter), Backend Logic, & UI Design (Figma)</span>
+                </div>
+
+                <div class="tech-stack-row">
+                  <span class="tech-tag">Flutter</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">Figma</span>
+                </div>
+
+                <div class="project-actions-row">
+                  <a href="https://github.com/muhammadazriel313-wq/pangsitnjedok" target="_blank"
+                    rel="noopener noreferrer" class="btn-project-primary full-width">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                      <path
+                        d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                    </svg>
+                    <span>Lihat di GitHub</span>
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <line x1="7" y1="17" x2="17" y2="7"></line>
+                      <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3: Roti 515 -->
+            <article class="project-card fade-up-init delay-1">
+              <div class="card-ambient-glow" aria-hidden="true"></div>
+
+              <!-- Mockup Graphic (Bakery Web Catalog UI) -->
+              <div class="sub-mockup-frame">
+                <div class="web-mockup-screen">
+                  <div class="web-top-bar">
+                    <span class="browser-dot dot-red"></span>
+                    <span class="browser-dot dot-yellow"></span>
+                    <span class="browser-dot dot-green"></span>
+                    <span class="mockup-url-pill">roti515.local/catalog</span>
+                  </div>
+
+                  <div class="bakery-ui-preview">
+                    <div class="bakery-nav-row">
+                      <span class="bakery-logo">Roti 515 Bakery</span>
+                      <span class="bakery-cart-btn">Keranjang (3)</span>
+                    </div>
+
+                    <div class="bakery-catalog-grid">
+                      <div class="bread-card-mini">
+                        <div class="bread-img-box img-brown"></div>
+                        <span class="bread-title-mini">Roti Sobek Keju</span>
+                        <span class="bread-price-mini">Rp 18.000</span>
+                      </div>
+                      <div class="bread-card-mini">
+                        <div class="bread-img-box img-gold"></div>
+                        <span class="bread-title-mini">Roti Cokelat Lumer</span>
+                        <span class="bread-price-mini">Rp 14.000</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Content Info -->
+              <div class="project-card-content">
+                <div class="project-badges-row">
+                  <span class="status-badge status-complete">Completed</span>
+                  <span class="type-badge">Proyek Kelompok</span>
+                </div>
+
+                <h3 class="project-title">Roti 515 — Bread Ordering Website</h3>
+
+                <p class="project-desc">
+                  Platform web pemesanan produk bakery dan roti berbasis PHP dan basis data MySQL. Dilengkapi katalog
+                  produk terstruktur, manajemen keranjang belanja, serta pencatatan pemesanan untuk operasional toko.
+                </p>
+
+                <!-- Contribution -->
+                <div class="contribution-box compact">
+                  <span class="contrib-label">Kontribusi:</span>
+                  <span class="contrib-text">Frontend, Backend, Database Relasional, & UI Design (Figma)</span>
+                </div>
+
+                <div class="tech-stack-row">
+                  <span class="tech-tag">PHP</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">Figma</span>
+                </div>
+
+                <div class="project-actions-row">
+                  <a href="https://github.com/muhammadazriel313-wq/roti515" target="_blank" rel="noopener noreferrer"
+                    class="btn-project-primary full-width">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                      <path
+                        d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                    </svg>
+                    <span>Lihat di GitHub</span>
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <line x1="7" y1="17" x2="17" y2="7"></line>
+                      <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         EXPERIENCE & EDUCATION SECTION
+         ======================================================================= -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+
+        <div class="section-heading-wrap fade-up-init">
+          <div class="section-tag">
+            <span class="tag-glow-dot"></span>
+            <span>Experience & Education</span>
+          </div>
+          <h2 class="section-title">
+            My Journey & <span class="gradient-text">Milestones</span>
+          </h2>
+          <p class="section-subtitle">
+            Kombinasi pengalaman organisasi, kepanitiaan, kerja profesional, serta latar belakang pendidikan akademis
+            yang membentuk karakter dan etos kerja saya.
+          </p>
+        </div>
+
+        <div class="journey-columns-grid">
+
+          <!-- Left Column: Work & Organization Experience -->
+          <div class="journey-column fade-up-init">
+            <div class="journey-col-header">
+              <div class="col-icon-box cat-purple">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </div>
+              <h3 class="col-heading">Experience</h3>
+            </div>
+
+            <div class="timeline-stream">
+
+              <!-- Item 1: Susu Racik Maktam -->
+              <div class="timeline-node">
+                <div class="node-marker">
+                  <span class="node-dot"></span>
+                  <span class="node-line"></span>
+                </div>
+                <div class="timeline-card">
+                  <div class="timeline-time-badge">2024</div>
+                  <h4 class="timeline-role">Cleaning Service & Waiter</h4>
+                  <div class="timeline-company">Susu Racik Maktam — Penanggungan, Kediri</div>
+                  <ul class="timeline-bullets">
+                    <li>Bertanggung jawab menjaga kebersihan, sanitasi, dan kerapian seluruh area operasional kerja.
+                    </li>
+                    <li>Memberikan pelayanan terbaik dan ramah kepada pelanggan yang datang, memastikan kepuasan
+                      konsumen.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Item 2: Karang Taruna -->
+              <div class="timeline-node">
+                <div class="node-marker">
+                  <span class="node-dot"></span>
+                  <span class="node-line"></span>
+                </div>
+                <div class="timeline-card">
+                  <div class="timeline-time-badge">2024</div>
+                  <h4 class="timeline-role">Anggota Aktif</h4>
+                  <div class="timeline-company">Karang Taruna Desa Bandar Kidul</div>
+                  <ul class="timeline-bullets">
+                    <li>Berpartisipasi aktif dalam kegiatan sosial, kemasyarakatan, dan kepemudaan tingkat desa.</li>
+                    <li>Berkolaborasi dengan sesama anggota dalam perencanaan program positif bagi lingkungan.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Item 3: Panitia Lomba 17 Agustus -->
+              <div class="timeline-node">
+                <div class="node-marker">
+                  <span class="node-dot"></span>
+                </div>
+                <div class="timeline-card">
+                  <div class="timeline-time-badge">2024</div>
+                  <h4 class="timeline-role">Panitia Pelaksana Kegiatan</h4>
+                  <div class="timeline-company">Panitia Lomba 17 Agustus — Desa Bandar Kidul</div>
+                  <ul class="timeline-bullets">
+                    <li>Membantu persiapan teknis, logistik, dan koordinasi operasional perlombaan peringatan HUT RI.
+                    </li>
+                    <li>Memastikan kelancaran, sportivitas, dan antusiasme masyarakat selama rangkaian kegiatan
+                      berlangsung.</li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Right Column: Formal Education -->
+          <div class="journey-column fade-up-init delay-1" id="education">
+            <div class="journey-col-header">
+              <div class="col-icon-box cat-blue">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <h3 class="col-heading">Education</h3>
+            </div>
+
+            <div class="timeline-stream">
+
+              <!-- Education 1: Politeknik Negeri Jember -->
+              <div class="timeline-node">
+                <div class="node-marker">
+                  <span class="node-dot dot-active"></span>
+                  <span class="node-line"></span>
+                </div>
+                <div class="timeline-card card-featured">
+                  <div class="card-glow-accent" aria-hidden="true"></div>
+                  <div class="timeline-time-badge badge-active">2025 – Present</div>
+                  <h4 class="timeline-role">D4 Teknik Informatika</h4>
+                  <div class="timeline-company">Politeknik Negeri Jember (PSDKU Nganjuk)</div>
+
+                  <div class="academic-score-row">
+                    <div class="score-chip">
+                      <span class="score-label">IPK Semester 1</span>
+                      <span class="score-val">3.50</span>
+                    </div>
+                    <div class="score-chip highlight">
+                      <span class="score-label">IPK Semester 2</span>
+                      <span class="score-val gradient-text">3.95</span>
+                    </div>
+                  </div>
+
+                  <p class="timeline-academic-desc">
+                    Fokus pada rekayasa perangkat lunak, struktur data, pemrograman berorientasi objek, pengembangan
+                    aplikasi web dan mobile, perancangan basis data, serta kolaborasi tim.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Education 2: SMA Negeri 4 Kediri -->
+              <div class="timeline-node">
+                <div class="node-marker">
+                  <span class="node-dot"></span>
+                </div>
+                <div class="timeline-card">
+                  <div class="timeline-time-badge">2021 – 2024</div>
+                  <h4 class="timeline-role">Ilmu Pengetahuan Sosial (IPS)</h4>
+                  <div class="timeline-company">SMA Negeri 4 Kediri</div>
+                  <p class="timeline-academic-desc">
+                    Menyelesaikan pendidikan menengah atas dengan fondasi kemampuan komunikasi, pemikiran analitis, dan
+                    adaptabilitas yang kuat.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         CERTIFICATES SECTION
+         ======================================================================= -->
+    <section class="section cert-section" id="certificates">
+      <div class="container">
+
+        <div class="section-heading-wrap fade-up-init">
+          <div class="section-tag">
+            <span class="tag-glow-dot"></span>
+            <span>Certificates & Courses</span>
+          </div>
+          <h2 class="section-title">
+            Verified Courses & <span class="gradient-text">Learning</span>
+          </h2>
+          <p class="section-subtitle">
+            Pelatihan intensif pengembangan kemampuan komunikasi bahasa Inggris yang telah diselesaikan untuk menunjang
+            wawasan global dan profesional.
+          </p>
+        </div>
+
+        <div class="certificates-grid">
+
+          <!-- Certificate 1: Pre-Basic English -->
+          <div class="cert-card fade-up-init">
+            <div class="card-ambient-glow" aria-hidden="true"></div>
+
+            <div class="cert-card-top">
+              <div class="cert-icon-seal">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <circle cx="12" cy="8" r="7"></circle>
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                </svg>
+              </div>
+              <span class="cert-issuer-badge">Kampung Inggris Pare</span>
+            </div>
+
+            <div class="cert-card-body">
+              <h3 class="cert-title">Pre-Basic English Certificate</h3>
+              <div class="cert-institution">Brilliant — Kampung Inggris Pare, Kediri</div>
+
+              <p class="cert-description">
+                Kursus intensif bahasa Inggris dasar yang mencakup penguasaan kosakata esensial, struktur tata bahasa
+                awal, dan pengenalan pola percakapan formal.
+              </p>
+
+              <div class="cert-meta-details">
+                <div class="meta-item">
+                  <span class="meta-label">Program</span>
+                  <span class="meta-val">English Course</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Durasi</span>
+                  <span class="meta-val">2 Bulan Intensif</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="cert-card-footer">
+              <div class="verified-indicator">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#10b981" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Verified Curriculum</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificate 2: Basic English -->
+          <div class="cert-card fade-up-init delay-1">
+            <div class="card-ambient-glow" aria-hidden="true"></div>
+
+            <div class="cert-card-top">
+              <div class="cert-icon-seal seal-cyan">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <circle cx="12" cy="8" r="7"></circle>
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                </svg>
+              </div>
+              <span class="cert-issuer-badge">Kampung Inggris Pare</span>
+            </div>
+
+            <div class="cert-card-body">
+              <h3 class="cert-title">Basic English Certificate</h3>
+              <div class="cert-institution">Brilliant — Kampung Inggris Pare, Kediri</div>
+
+              <p class="cert-description">
+                Tingkat lanjutan dasar yang melatih kefasihan berbicara (speaking), pemahaman mendengarkan (listening
+                comprehension), serta pembentukan kalimat komunikatif.
+              </p>
+
+              <div class="cert-meta-details">
+                <div class="meta-item">
+                  <span class="meta-label">Program</span>
+                  <span class="meta-val">English Course</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Durasi</span>
+                  <span class="meta-val">2 Bulan Intensif</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="cert-card-footer">
+              <div class="verified-indicator">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#10b981" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Verified Curriculum</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         CONTACT SECTION
+         ======================================================================= -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+
+        <div class="contact-card-box fade-up-init">
+          <div class="contact-ambient-glow" aria-hidden="true"></div>
+
+          <div class="contact-header-center">
+            <div class="section-tag center-tag">
+              <span class="tag-glow-dot"></span>
+              <span>Let's Connect</span>
+            </div>
+
+            <h2 class="contact-main-title">
+              Interested in Collaborating or <span class="gradient-text">Chatting?</span>
+            </h2>
+
+            <p class="contact-lead-desc">
+              Saya selalu terbuka untuk peluang magang, kolaborasi proyek perangkat lunak, maupun diskusi seputar web
+              dan mobile development. Jangan ragu untuk menghubungi saya!
+            </p>
+          </div>
+
+          <!-- Direct Email Action Box -->
+          <div class="email-action-container">
+            <div class="email-display-card">
+              <div class="email-left-info">
+                <div class="email-icon-circle">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="email-text-box">
+                  <span class="email-type-label">Email Address</span>
+                  <span class="email-address-text" id="target-email">muhammadazriel313@gmail.com</span>
+                </div>
+              </div>
+
+              <div class="email-actions-group">
+                <!-- Copy Email Button -->
+                <button type="button" class="btn-copy-email" id="btn-copy-email" aria-label="Salin alamat email">
+                  <svg class="copy-icon-default" viewBox="0 0 24 24" width="18" height="18" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <svg class="copy-icon-success" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#10b981"
+                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span class="copy-text-label">Salin Email</span>
+                </button>
+
+                <!-- Direct Mailto Link -->
+                <a href="mailto:muhammadazriel313@gmail.com" class="btn-send-mail">
+                  <span>Kirim Pesan</span>
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Connection Buttons -->
+          <div class="contact-social-channels">
+            <a href="https://wa.me/6289654957080" target="_blank" rel="noopener noreferrer"
+              class="contact-social-pill whatsapp-pill">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path
+                  d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+              </svg>
+              <span>WhatsApp (0896-5495-7080)</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/muhammad-azriel-2a2113445/" target="_blank" rel="noopener noreferrer"
+              class="contact-social-pill">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+              <span>Connect on LinkedIn</span>
+            </a>
+
+            <a href="https://github.com/muhammadazriel313-wq" target="_blank" rel="noopener noreferrer"
+              class="contact-social-pill">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+              <span>Follow on GitHub</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =======================================================================
+       SITE FOOTER
+       ======================================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+
+      <div class="footer-left">
+        <span class="footer-name">Muhammad Azriel Adha Agnansyah</span>
+        <span class="footer-divider" aria-hidden="true">·</span>
+        <span class="footer-caption">D4 Teknik Informatika Politeknik Negeri Jember</span>
+      </div>
+
+      <div class="footer-center">
+        <p class="footer-copy">© 2026 Muhammad Azriel. All rights reserved.</p>
+      </div>
+
+      <div class="footer-right">
+        <a href="#home" class="btn-back-to-top" id="btn-back-to-top" aria-label="Kembali ke atas halaman">
+          <span>Back to top</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="copy-toast" role="status" aria-live="polite">
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#10b981" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span>Alamat email berhasil disalin ke clipboard!</span>
+  </div>
+
+  <script src="assets/js/main.js"></script>
 </body>
+
 </html>
