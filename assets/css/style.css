@@ -220,9 +220,9 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding-top: calc(var(--navbar-height) + 2rem);
+  padding-top: calc(var(--navbar-height) + 4rem); /* Extra top padding so head is never clipped */
   padding-bottom: 4rem;
-  overflow: hidden;
+  overflow-x: hidden; /* Only clip horizontal overflow — allow portrait to breathe vertically */
 }
 
 .hero-grid {
@@ -426,7 +426,7 @@ body {
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end; /* Anchor portrait to bottom so head extends upward freely */
   width: 100%;
 }
 
@@ -517,8 +517,8 @@ body {
   /* Realistic, soft drop-shadow without harsh neon outline */
   filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.75));
   /* Subtle bottom gradient fade to seamlessly blend into dark background */
-  -webkit-mask-image: linear-gradient(to bottom, #000 88%, transparent 100%);
-  mask-image: linear-gradient(to bottom, #000 88%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, #000 92%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 92%, transparent 100%);
   animation: floatSlow 8s ease-in-out infinite alternate;
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
 }
